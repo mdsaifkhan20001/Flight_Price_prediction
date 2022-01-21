@@ -14,27 +14,12 @@ jobs:
       - restore_cache:
           key: deps1-{{ .Branch }}-{{ checksum "requirements.txt" }}
       - run:
-          name: Install Python deps in a venv
+          name: declaring docker image name
           command: |
             echo 'export TAG=0.1.${CIRCLE_BUILD_NUM}' >> $BASH_ENV
-            echo 'export IMAGE_NAME=${DOCKER_IMAGE_NAME}' >> $BASH_ENV
-            python3 -m venv venv
-            . venv/bin/activate
-            pip install --upgrade pip
-            pip install -r requirements.txt
-      - save_cache:
-          key: deps1-{{ .Branch }}-{{ checksum "requirements.txt" }}
-          paths:
-            - "venv"
-      - run:
-          command: |
-            . venv/bin/activate
-            python -m pytest -v tests/test_script.py
-      - store_artifacts:
-          path: test-reports/
-          destination: tr1
-      - store_test_results:
-          path: test-reports/
+            echo 'export IMAGE_NAME=spelling-demo' >> $BASH_ENV
+
+      
       - setup_remote_docker:
           version: 19.03.13
       - run:
@@ -58,7 +43,6 @@ jobs:
           name: Pushing to heroku registry
           command: |
             heroku container:login
-            #heroku ps:scale web=1 -a $HEROKU_APP_NAME
             heroku container:push web -a $HEROKU_APP_NAME
             heroku container:release web -a $HEROKU_APP_NAME
 
