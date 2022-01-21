@@ -1,0 +1,12 @@
+flask
+flask_cors
+pandas
+matplotlib
+seaborn
+cassandra-driver
+scikit-learn
+xgboost
+numpy
+gunicorn==20.0.4
+#-e .
+

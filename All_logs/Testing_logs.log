@@ -1,0 +1,34 @@
+2022-01-17 04:59:51 INFO Raw_Data_Validation_Testing---- Entered into class >>>>>> Raw_Data_Validation_Testing
+2022-01-17 04:59:51 INFO Raw_Data_Validation_Testing---- Loading schema from Testing_Schema.json completed
+2022-01-17 04:59:51 INFO Raw_Data_Validation_Testing---- Deleted existing Testing_Batch_Files/Good_Data/ folder
+2022-01-17 04:59:51 INFO Raw_Data_Validation_Testing---- Created Testing_Batch_Files/Good_Data/ folder
+2022-01-17 04:59:51 INFO Raw_Data_Validation_Testing---- Created Testing_Batch_Files/Bad_Data/ folder
+2022-01-17 04:59:51 INFO Raw_Data_Validation_Testing---- Copied test1.csv to Good_Data Folder
+2022-01-17 04:59:51 INFO Raw_Data_Validation_Testing---- Copied test2.csv to Good_Data Folder
+2022-01-17 04:59:52 INFO Raw_Data_Validation_Testing---- Copied test3.csv to Good_Data Folder
+2022-01-17 04:59:52 INFO Raw_Data_Validation_Testing---- Exiting from class <<<<<< Raw_Data_Validation_Testing
+2022-01-17 04:59:52 INFO data_preprocessing---- Entered into class >>>>>> dataPreprocessing
+2022-01-17 04:59:52 INFO data_preprocessing---- Starting start_preprocessing_for_testing for test1.csv
+2022-01-17 04:59:52 INFO data_preprocessing---- Method handling_categorical_var_for_testing_data completed successfully
+2022-01-17 04:59:52 INFO data_preprocessing---- Successfully completed method date_time_var
+2022-01-17 04:59:52 INFO data_preprocessing---- Successfully completed handle_duration_col
+2022-01-17 04:59:52 INFO data_preprocessing---- Successfully executed start_preprocessing_for_testing for test1.csv
+2022-01-17 04:59:52 INFO data_preprocessing---- Exiting from class <<<<<< dataPreprocessing for test1.csv
+2022-01-17 04:59:52 INFO data_preprocessing---- Starting start_preprocessing_for_testing for test2.csv
+2022-01-17 04:59:52 INFO data_preprocessing---- Method handling_categorical_var_for_testing_data completed successfully
+2022-01-17 04:59:52 INFO data_preprocessing---- Successfully completed method date_time_var
+2022-01-17 04:59:52 INFO data_preprocessing---- Successfully completed handle_duration_col
+2022-01-17 04:59:52 INFO data_preprocessing---- Successfully executed start_preprocessing_for_testing for test2.csv
+2022-01-17 04:59:52 INFO data_preprocessing---- Exiting from class <<<<<< dataPreprocessing for test2.csv
+2022-01-17 04:59:52 INFO data_preprocessing---- Starting start_preprocessing_for_testing for test3.csv
+2022-01-17 04:59:52 INFO data_preprocessing---- Method handling_categorical_var_for_testing_data completed successfully
+2022-01-17 04:59:52 INFO data_preprocessing---- Successfully completed method date_time_var
+2022-01-17 04:59:52 INFO data_preprocessing---- Successfully completed handle_duration_col
+2022-01-17 04:59:52 INFO data_preprocessing---- Successfully executed start_preprocessing_for_testing for test3.csv
+2022-01-17 04:59:52 INFO data_preprocessing---- Exiting from class <<<<<< dataPreprocessing for test3.csv
+2022-01-17 04:59:54 INFO prediction---- Entered into class >>>>>> predict
+2022-01-17 04:59:54 INFO prediction---- Price column created and prices are predicted for test1.csv
+2022-01-17 04:59:54 INFO prediction---- Price column created and prices are predicted for test2.csv
+2022-01-17 04:59:54 INFO prediction---- Price column created and prices are predicted for test3.csv
+2022-01-17 04:59:54 INFO prediction---- Exiting from class <<<<< predict
+2022-01-17 04:59:54 INFO _internal---- 192.168.43.176 - - [17/Jan/2022 04:59:54] "POST /predict HTTP/1.1" 200 -

@@ -1,0 +1,15 @@
+{
+  "Id": "int64",
+  "Airline": "O",
+ "Date_of_Journey": "O",
+ "Source": "O",
+ "Destination": "O",
+ "Route": "O",
+ "Dep_Time": "O",
+ "Arrival_Time": "O",
+ "Duration": "O",
+ "Total_Stops": "O",
+ "Additional_Info": "O",
+ "Price": "int64"
+
+}
